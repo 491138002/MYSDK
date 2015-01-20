@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff">
+	
+    <TextView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/bx_tip_title_bar"
+    	android:textColor="#fff"
+    	android:textAppearance="@android:style/TextAppearance.Large"
+    	android:text="@string/bx_dialog_title"
+    	android:gravity="center_vertical"
+    	android:paddingLeft="10dip"
+    />
+    
+    <TextView
+        android:id="@+id/bx_tip_content"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="#000"
+    	android:textAppearance="@android:style/TextAppearance.Large"
+    	android:paddingTop="20dip"
+    	android:paddingBottom="30dip"
+    	android:gravity="center"
+    />
+    
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:orientation="horizontal"
+    	android:paddingBottom="10dip"
+    >
+       
+         <Button
+        	android:id="@+id/bx_tip_submit"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/bx_btn_tip_submit"
+        	android:text="@string/bx_dialog_submit"
+        	android:textColor="#fff"
+        	android:textAppearance="@android:style/TextAppearance.Large"
+        	android:padding="10dp"
+        />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bx_body_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bx_body_info_bg"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bx_rect_all_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/bx_account_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bx_account_icon"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/bx_account_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/bx_account_icon"
+                    android:text="@string/bx_home_account"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/bx_user_setting_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/bx_account_label"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/bx_user_setting_select_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/bx_pull_down_arrow_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/bx_user_setting_bind_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bx_rect_top_selector" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bx_user_setting_arrow_1"
+                        android:orientation="vertical" >
+						
+                        <LinearLayout
+                        	android:layout_width="fill_parent"
+                        	android:layout_height="0dp"
+                        	android:layout_weight="1"
+                        	android:orientation="horizontal"
+                        	android:gravity="center_vertical"
+                        >
+                            <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="@string/bx_user_mobile_number_binding"
+	                            android:textColor="#000000"
+	                            android:paddingLeft="10dp" />
+                            
+                            <TextView
+                                android:id="@+id/bx_user_setting_bind_phone"
+	                            android:layout_width="fill_parent"
+	                            android:layout_height="wrap_content"
+	                            android:gravity="center"
+	                            android:textColor="#4876FF"
+							/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/bx_user_setting_arrow_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/bx_arrow"
+                        android:layout_marginRight="10dp" />
+                    
+                </RelativeLayout>
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bx_rect_line" />
+                
+                <RelativeLayout
+                    android:id="@+id/bx_user_setting_find_password_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bx_rect_center_selector" >
+
+                    <ImageView
+                        android:id="@+id/bx_user_setting_arrow_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/bx_arrow"
+                        android:layout_marginRight="10dp" />
+                    
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/bx_user_setting_arrow_2"
+                        android:text="@string/bx_user_change_password"
+                        android:textColor="#000000"
+                        android:paddingLeft="10dp" />
+                </RelativeLayout>
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bx_rect_line" />
+                
+                
+                
+                <RelativeLayout
+                    android:id="@+id/bx_user_setting_forgot_password_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bx_rect_bottom_selector" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bx_user_setting_arrow_1"
+                        android:orientation="vertical" >
+						
+                        <LinearLayout
+                        	android:layout_width="fill_parent"
+                        	android:layout_height="0dp"
+                        	android:layout_weight="1"
+                        	android:orientation="horizontal"
+                        	android:gravity="center_vertical"
+                        >
+                            <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="@string/bx_home_forgot_password"
+	                            android:textColor="#000000"
+	                            android:paddingLeft="10dp" />
+                            
+                            <TextView
+                                android:id="@+id/bx_user_setting_bind_phone"
+	                            android:layout_width="fill_parent"
+	                            android:layout_height="wrap_content"
+	                            android:gravity="center"
+	                            android:textColor="#4876FF"
+							/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/bx_user_setting_arrow_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/bx_arrow"
+                        android:layout_marginRight="10dp" />
+                    
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="2dp" >
+
+                <Button
+                    android:id="@+id/bx_quick_start_play"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bx_btn_blue_selector"
+                    android:text="@string/bx_user_setting_start_game"
+                    android:textColor="@android:color/white" >
+                </Button>
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+          	android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bx_tip_icon"
+               />
+        </LinearLayout>
+</LinearLayout>

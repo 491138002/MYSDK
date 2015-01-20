@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bx_edit_layout_bg1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/bx_pay_card_number_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/pay_card" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/bx_pay_card_type_actv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        style="?android:style/Widget.TextView"
+                        android:layout_toRightOf="@+id/bx_pay_card_number_title_tv"
+                        android:background="#00000000"
+                        android:drawableRight="@drawable/bx_pay_bottom_arrow"
+                        android:editable="false"
+                        android:paddingLeft="10dp"
+                        android:text="@string/selcet_paycard"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bx_edit_layout_bg1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/bx_pay_card_number_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/price" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/bx_pay_card_moeny_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/bx_pay_card_number_title_tv"
+                        android:background="#00000000"
+                        android:drawableRight="@drawable/bx_pay_bottom_arrow"
+                        android:editable="false"
+                        android:hint="@string/rmb20"
+                        style="?android:style/Widget.TextView"
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bx_edit_layout_bg1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/bx_pay_card_number_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/card_number" />
+
+                    <EditText
+                        android:id="@+id/bx_pay_card_number_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/bx_pay_card_number_title_tv"
+                        android:background="#00000000"
+                        android:hint="@string/enter_cardnum"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        style="?android:style/Widget.TextView"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/bx_pay_card_number_clear_btn"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bx_btn_find_psw_close_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bx_edit_layout_bg1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/bx_pay_card_pwd_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/pwd" />
+
+                    <EditText
+                        android:id="@+id/bx_pay_card_pwd_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/bx_pay_card_pwd_title"
+                        android:background="#00000000"
+                        android:hint="@string/enter_cardpwd"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        style="?android:style/Widget.TextView"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/bx_pay_card_pwd_clear_btn"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bx_btn_find_psw_close_selector" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bx_pay_description_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bx_pay_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bx_btn_yellow_selector"
+            android:text="@string/pay_now"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>

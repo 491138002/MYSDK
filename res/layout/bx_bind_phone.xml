@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#89000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/baofeng_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baofeng" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hello"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/bx_bind_phone_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="#47C0F9" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bx_bind_phone_tip2"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/toumingduantiao"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/dianhua" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/fengexianx" />
+
+                    <EditText
+                        android:id="@+id/bx_bind_phone_input_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#00000000"
+                        android:hint="@string/bx_bind_input_phone"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/bx_bind_phone_input_veritycode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/toumingduantiao"
+                        android:hint="@string/bx_bind_input_verifycode"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/bx_bind_phone_get_verifycode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bx_btn_selector_3"
+                        android:gravity="center"
+                        android:text="@string/bx_bind_get_verifycode"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bx_bind_phone_now_bind"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bx_btn_selector_3"
+                    android:gravity="center"
+                    android:text="@string/bx_bind_phone_way_now"
+                    android:textColor="@android:color/black" >
+                </Button>
+
+                <Button
+                    android:id="@+id/bx_back"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bx_btn_selector_1"
+                    android:gravity="center"
+                    android:text="@string/bx_back"
+                    android:textColor="@android:color/black" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- 自定义loading -->
+    <style name="bx_custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否悬浮在activity上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.2</item> <!-- 灰度 -->
+        <item name="android:windowContentOverlay">@null</item> <!-- 对话框是否有遮盖 -->
+    </style>
+    
+    <style name="bx_alipay_alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bx_alipay_popup_bg</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+    
+    <style name="CustomProgressBarStyleLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateDrawable">@anim/progressbar_custom_large</item>
+    </style>
+</resources>

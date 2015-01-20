@@ -1,0 +1,342 @@
+package com.baofeng.game.sdk;
+
+import android.content.Context;
+
+import com.baofeng.game.sdk.util.Util;
+
+public class BFResources {
+	public static Context context;
+	
+	/** type **/
+	public static final String TYPE_ID = "id";
+	public static final String TYPE_LAYOUT = "layout";
+	public static final String TYPE_DRAWABLE = "drawable";
+	public static final String TYPE_STYLE = "style";
+	public static final String TYPE_ANIM = "anim";
+	public static final String TYPE_STRING = "string";
+	
+	/** txt **/
+	public static final String ERROR_CONTEXT_NULL = "应用上下文（ctx）不能为空！";
+	public static final String ERROR_CALLBACKLISTENER_NULL = "初始化回调侦听器（listener）为空！";
+	public static final String SUCCESS_INIT = "初始化SDK成功";
+	public static final String TXT_ACCOUT_SETTING = "安全设置";
+	public static final String TXT_LATEST_ACTION = "最新活动";
+	public static final String TXT_GAME_INFORMATION = "游戏推荐";
+	public static final String TXT_PAY_OTHER_HINT = "请输入充值金额";
+	public static final String TXT_PAY_RESULT_TIP = "正在查询支付结果";
+
+	public static final class string{
+		public static final int bx_alipay_confirm_title = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_confirm_title");
+		public static final int bx_alipay_ensure = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_ensure");
+		public static final int bx_alipay_cancel = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_cancel");
+		public static final int bx_alipay_processing = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_processing");
+		public static final int bx_alipay_download = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_download");
+		public static final int bx_alipay_cancel_install_msp = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_cancel_install_msp");
+		public static final int bx_alipay_cancel_install_alipay = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_cancel_install_alipay");
+		public static final int bx_alipay_download_fail = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_download_fail");
+		public static final int bx_alipay_redo = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_redo");
+		public static final int bx_alipay_install_msp = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_install_msp");
+		public static final int bx_alipay_install_alipay = Util.getResIdFromFileName(context, TYPE_STRING, "bx_alipay_install_alipay");
+	}
+	
+	public static final class drawable{
+		public static final int bx_body_bg = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_body_bg");
+		public static final int bx_body_info_bg = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_body_info_bg");
+		public static final int bx_edit_layout_bg1 = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_edit_layout_bg1");
+		public static final int bx_btn_slect = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_slect");
+		public static final int bx_btn_white_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_white_selector");
+		public static final int bx_header_bg = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_bg");
+		public static final int bx_header_game = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_game");
+		public static final int bx_header_button_left_pressed = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_button_left_pressed");
+		public static final int bx_header_game_setting_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_game_setting_default");
+		public static final int bx_header_button_center_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_button_center_default");
+		public static final int bx_header_game_new_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_game_new_default");
+		public static final int bx_header_game_info_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_game_info_default");
+		public static final int bx_header_button_right_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_button_right_default");
+		public static final int bx_header_button_left_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_button_left_default");
+		public static final int bx_header_button_center_pressed = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_button_center_pressed");
+		public static final int bx_header_button_right_pressed = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_button_right_pressed");
+		public static final int bx_header_line = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_header_line");
+		public static final int bx_btn_more_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_more_selector");
+		public static final int bx_account_setting_info_bg = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_account_setting_info_bg");
+		public static final int bx_account_icon = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_account_icon");
+		public static final int bx_btn_game_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_game_selector");
+		public static final int bx_btn_html_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_html_selector");
+		public static final int bx_head_setting_icon_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_head_setting_icon_selector");
+		public static final int bx_head_news_icon_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_head_news_icon_selector");
+		public static final int bx_head_game_icon_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_head_game_icon_selector");
+		public static final int bx_head_text_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_head_text_selector");
+		public static final int bx_btn_alipay_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_alipay_selector");
+		public static final int bx_btn_dx_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_dx_selector");
+		public static final int bx_btn_jw_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_jw_selector");
+		public static final int bx_btn_jy_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_jy_selector");
+		public static final int bx_btn_lt_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_lt_selector");
+		public static final int bx_btn_qq_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_qq_selector");
+		public static final int bx_btn_sd_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_sd_selector");
+		public static final int bx_btn_wm_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_wm_selector");
+		public static final int bx_btn_wy_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_wy_selector");
+		public static final int bx_btn_yd_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_yd_selector");
+		public static final int bx_btn_sj_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_yl_selector");
+		public static final int bx_btn_yl_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_yl_selector");
+		public static final int bx_btn_yl_voice_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_yl_voice_selector");
+		public static final int bx_btn_zt_selector = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_zt_selector");
+		public static final int bx_cz_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_cz_default");
+		public static final int bx_cz_selected = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_cz_selected");
+		public static final int bx_icon_new = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_icon_new");
+		public static final int bx_grey_dot = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_grey_dot");
+		public static final int bx_red_dot = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_red_dot");
+		public static final int bx_right_btn_default = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_right_btn_default");
+		public static final int bx_right_btn_pressed = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_right_btn_pressed");
+		public static final int bx_info = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_info");
+		public static final int bx_btn_bank_js = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_js");
+		public static final int bx_btn_bank_ny = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_ny");
+		public static final int bx_btn_bank_cx = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_cx");
+		public static final int bx_btn_bank_zs = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_zs");
+		public static final int bx_btn_bank_gs = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_gs");
+		public static final int bx_btn_bank_jt = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_jt");
+		public static final int bx_btn_bank_zg = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_zg");
+		public static final int bx_btn_bank_pf = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_bank_pf");
+		public static final int bx_pop_show = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_pop_show");
+		public static final int bx_pop_dis = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_pop_dis");
+		public static final int bx_alipay_title = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_alipay_title");
+		public static final int bx_alipay_title_background = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_alipay_title_background");
+		public static final int bx_rect_bottom_pressed = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_rect_bottom_pressed");
+		
+		//下拉刷新
+		public static final int bx_ic_pulltorefresh_arrow = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_ic_pulltorefresh_arrow");
+		public static final int bx_ic_pulltorefresh_arrow_up = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_ic_pulltorefresh_arrow_up");
+		public static final int bx_btn_selector_3 = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_selector_3");
+		public static final int bx_btn_selector_2 = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_selector_2");
+		public static final int bx_btn_selector_1 = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_selector_1");
+		public static final int bx_btn_account_info_bind_phone = Util.getResIdFromFileName(context, TYPE_DRAWABLE, "bx_btn_account_info_bind_phone");;
+	}
+	
+	public static final class style{
+		
+		public static final int bx_custom_dialog = Util.getResIdFromFileName(context, TYPE_STYLE, "bx_custom_dialog");
+		public static final int animationPreview = Util.getResIdFromFileName(context, TYPE_STYLE, "AnimationPreview");
+		public static final int bx_alipay_alert_dialog = Util.getResIdFromFileName(context, TYPE_STYLE, "bx_alipay_alert_dialog");
+	}
+	
+	public static final class layout{
+		public static final int bx_main_activity = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_main_activity");
+		public static final int bx_loading_dialog = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_loading_dialog");
+		public static final int bx_home_panel = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_home_panel");
+		public static final int bx_quick_play = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_quick_play");
+		public static final int bx_account_register = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_account_register");
+		public static final int bx_find_password = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_find_password");
+		public static final int bx_find_new_password = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_find_password");
+		public static final int bx_reset_password = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_reset_password");
+		public static final int bx_set_new_password = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_set_new_password");
+		public static final int bx_force_change_password = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_force_change_password");
+		public static final int bx_bind_phone = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_bind_phone");
+		public static final int bx_change_password = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_change_password");
+		public static final int bx_change_bind_phone = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_change_bind_phone");
+		public static final int bx_bind_phone_again = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_bind_phone_again");
+		public static final int bx_tip_dialog = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_tip_dialog");
+		public static final int bx_pay_center_transaction_dialog = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_pay_center_transaction_dialog");
+		public static final int bx_pay_center = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_pay_center");
+		public static final int bx_pay_center_vertical = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_pay_center_vertical");
+		public static final int bx_pay_center_game_card_item = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_pay_center_game_card_item");
+		public static final int bx_pay_center_transaction = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_pay_center_transaction");
+		public static final int bx_pay_center_transaction_records_item = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_pay_center_transaction_records_item");
+		public static final int bx_webview = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_webview");
+		public static final int bx_account_info = Util.getResIdFromFileName(context, TYPE_LAYOUT, "bx_account_info");
+	}
+
+	public static final class id{
+		public static final int bx_dialog_title_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_dialog_title_tv");
+		public static final int baofeng_logo = Util.getResIdFromFileName(context, TYPE_ID, "baofeng_logo");
+		public static final int service = Util.getResIdFromFileName(context, TYPE_ID, "service");
+		public static final int qqgroup = Util.getResIdFromFileName(context, TYPE_ID, "qq_group");
+		public static final int bx_dialog_content_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_dialog_content_tv");
+		public static final int bx_dialog_submit_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_dialog_submit_btn");
+		public static final int bx_dialog_cancel_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_dialog_cancel_btn");
+		public static final int bx_pay_back = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_back");
+		public static final int bx_pay_more = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_more");
+		public static final int bx_pay_content_vf = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_content_vf");
+		public static final int bx_pay_bar_list = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_bar_list");
+		public static final int bx_pay_price_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_price_tv");
+		public static final int bx_pay_product_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_product_tv");
+		public static final int bx_pay_username_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_username_tv");
+		public static final int bx_pay_submit = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_submit");
+		public static final int bx_pay_card_type_gv = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_type_gv");
+		public static final int bx_pay_card_type_actv = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_type_actv");
+		public static final int bx_pay_card_number_et = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_number_et");
+		public static final int bx_pay_card_number_clear_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_number_clear_btn");
+		public static final int bx_pay_card_pwd_et = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_pwd_et");
+		public static final int bx_pay_card_pwd_clear_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_pwd_clear_btn");
+		public static final int bx_pay_card_moeny_et = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_moeny_et");
+		public static final int bx_pay_center_game_card_item = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_center_game_card_item");
+		public static final int bx_game_card_icon_iv = Util.getResIdFromFileName(context, TYPE_ID, "bx_game_card_icon_iv");
+		public static final int bx_game_card_selected_iv = Util.getResIdFromFileName(context, TYPE_ID, "bx_game_card_selected_iv");
+		public static final int bx_transcation_type_ll = Util.getResIdFromFileName(context, TYPE_ID, "bx_transcation_type_ll");
+		public static final int bx_transaction_listview = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_listview");
+		public static final int bx_transaction_name_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_name_tv");
+		public static final int bx_transaction_status_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_status_tv");
+		public static final int bx_transaction_price_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_price_tv");
+		public static final int bx_transaction_date_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_date_tv");
+		public static final int bx_transaction_bottom_layout = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_bottom_layout");
+		public static final int bx_transaction_order_number_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_order_number_tv");
+		public static final int bx_transaction_order_desc_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_order_desc_tv");
+		public static final int bx_transaction_show_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_transaction_show_btn");
+		public static final int main_top_tab = Util.getResIdFromFileName(context, TYPE_ID, "main_top_tab");
+		public static final int body = Util.getResIdFromFileName(context, TYPE_ID, "body");
+		public static final int bx_phone_number = Util.getResIdFromFileName(context, TYPE_ID, "bx_phone_number");
+		public static final int bx_yzm_edit = Util.getResIdFromFileName(context, TYPE_ID, "bx_yzm_edit");
+		public static final int bx_send_commit = Util.getResIdFromFileName(context, TYPE_ID, "bx_send_commit");
+		public static final int bx_input_phone_number = Util.getResIdFromFileName(context, TYPE_ID, "bx_input_phone_number");
+		public static final int bx_find_psw_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_find_psw_account");
+		public static final int bx_find_password_type = Util.getResIdFromFileName(context, TYPE_ID, "bx_find_password_type");
+		public static final int bx_yzm_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_yzm_btn");
+		public static final int bx_panel_list = Util.getResIdFromFileName(context, TYPE_ID, "bx_panel_list");
+		public static final int bx_panel_more_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_panel_more_btn");
+		public static final int bx_panel_item_time = Util.getResIdFromFileName(context, TYPE_ID, "bx_panel_item_time");
+		public static final int bx_panel_item_title = Util.getResIdFromFileName(context, TYPE_ID, "bx_panel_item_title");
+		public static final int bx_panel_item_dot = Util.getResIdFromFileName(context, TYPE_ID, "bx_panel_item_dot");
+		public static final int bx_news_details_title = Util.getResIdFromFileName(context, TYPE_ID, "bx_news_details_title");
+		public static final int bx_news_details_time = Util.getResIdFromFileName(context, TYPE_ID, "bx_news_details_time");
+		public static final int bx_news_details_back = Util.getResIdFromFileName(context, TYPE_ID, "bx_news_details_back");
+		public static final int bx_news_details_code_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_news_details_code_btn");
+		public static final int bx_news_details_content = Util.getResIdFromFileName(context, TYPE_ID, "bx_news_details_content");
+		public static final int bx_news_details_tip = Util.getResIdFromFileName(context, TYPE_ID, "bx_news_details_tip");
+		public static final int bx_more_game_site = Util.getResIdFromFileName(context, TYPE_ID, "bx_more_game_site");
+		public static final int bx_more_game_grid = Util.getResIdFromFileName(context, TYPE_ID, "bx_more_game_grid");
+		public static final int bx_more_game_strategy = Util.getResIdFromFileName(context, TYPE_ID, "bx_more_game_strategy");
+		public static final int bx_game_grid_item_title = Util.getResIdFromFileName(context, TYPE_ID, "bx_game_grid_item_title");
+		public static final int bx_game_grid_image = Util.getResIdFromFileName(context, TYPE_ID, "bx_game_grid_image");
+		public static final int bx_user_setting_bind_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_user_setting_bind_btn");
+		public static final int bx_user_setting_find_password_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_user_setting_find_password_btn");
+		public static final int bx_user_setting_forgot_password_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_user_setting_forgot_password_btn");
+		public static final int bx_user_setting_bind_phone = Util.getResIdFromFileName(context, TYPE_ID, "bx_user_setting_bind_phone");
+		public static final int bx_user_setting_select_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_user_setting_select_account");
+		public static final int bx_change_phone_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_change_phone_btn");
+		public static final int bx_user_setting_arrow_1 = Util.getResIdFromFileName(context, TYPE_ID, "bx_user_setting_arrow_1");
+		public static final int bx_user_setting_user = Util.getResIdFromFileName(context, TYPE_ID, "bx_user_setting_user");
+		public static final int bx_bind_phone_get_verifycode = Util.getResIdFromFileName(context, TYPE_ID, "bx_bind_phone_get_verifycode");
+		public static final int bx_bind_phone_input_phone = Util.getResIdFromFileName(context, TYPE_ID, "bx_bind_phone_input_phone");
+		public static final int bx_bind_phone_input_veritycode = Util.getResIdFromFileName(context, TYPE_ID, "bx_bind_phone_input_veritycode");
+		public static final int bx_bind_phone_now_bind = Util.getResIdFromFileName(context, TYPE_ID, "bx_bind_phone_now_bind");
+		public static final int bx_back = Util.getResIdFromFileName(context, TYPE_ID, "bx_back");
+		public static final int bx_bind_phone_user = Util.getResIdFromFileName(context, TYPE_ID, "bx_bind_phone_user");
+		public static final int bx_change_password_back = Util.getResIdFromFileName(context, TYPE_ID, "bx_change_password_back");
+		public static final int bx_change_password_commit = Util.getResIdFromFileName(context, TYPE_ID, "bx_change_password_commit");
+		public static final int bx_change_password_new_confirm = Util.getResIdFromFileName(context, TYPE_ID, "bx_change_password_new_confirm");
+		public static final int bx_change_password_new_psw = Util.getResIdFromFileName(context, TYPE_ID, "bx_change_password_new_psw");
+		public static final int bx_change_password_old_psw = Util.getResIdFromFileName(context, TYPE_ID, "bx_change_password_old_psw");
+		public static final int bx_home_password = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_password");
+		public static final int bx_home_rememb_psw_check = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_rememb_psw_check");
+		public static final int bx_home_user_type_baofeng = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_user_type_baofeng");
+		public static final int bx_home_find_password = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_find_password");
+		public static final int bx_home_other_register = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_other_register");
+		public static final int bx_home_login = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_login");
+		public static final int bx_home_register = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_register");
+		public static final int bx_home_quick_play = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_quick_play");
+		public static final int bx_home_other_platforms = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_other_platforms");
+		public static final int bx_home_tip = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_tip");
+		public static final int bx_home_back = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_back");
+		public static final int bx_home_baofeng_login = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_baofeng_login");
+		public static final int bx_force_change_password_input = Util.getResIdFromFileName(context, TYPE_ID, "bx_force_change_password_input");
+		public static final int bx_force_change_passwod_confirm = Util.getResIdFromFileName(context, TYPE_ID, "bx_force_change_passwod_confirm");
+		public static final int bx_quick_random_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_quick_random_account");
+		public static final int bx_quick_random_password = Util.getResIdFromFileName(context, TYPE_ID, "bx_quick_random_password");
+		public static final int bx_quick_save_random_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_quick_save_random_account");
+		public static final int bx_quick_start_play = Util.getResIdFromFileName(context, TYPE_ID, "bx_quick_start_play");
+		public static final int bx_quick_register_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_quick_register_account");
+		public static final int bx_quick_switch_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_quick_switch_account");
+		public static final int bx_quick_play_tip = Util.getResIdFromFileName(context, TYPE_ID, "bx_quick_play_tip");
+		public static final int bx_register_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_register_account");
+		public static final int bx_register_password = Util.getResIdFromFileName(context, TYPE_ID, "bx_register_password");
+		public static final int bx_register_now_register = Util.getResIdFromFileName(context, TYPE_ID, "bx_register_now_register");
+		public static final int bx_register_quick_play = Util.getResIdFromFileName(context, TYPE_ID, "bx_register_quick_play");
+		public static final int bx_register_logon = Util.getResIdFromFileName(context, TYPE_ID, "bx_register_logon");
+		public static final int bx_registration_agreement_check = Util.getResIdFromFileName(context, TYPE_ID, "bx_registration_agreement_check");
+		public static final int bx_register_type_baofeng_check = Util.getResIdFromFileName(context, TYPE_ID, "bx_register_type_baofeng_check");
+		public static final int bx_register_tip = Util.getResIdFromFileName(context, TYPE_ID, "bx_register_tip");
+		public static final int bx_find_psw_back = Util.getResIdFromFileName(context, TYPE_ID, "bx_find_psw_back");
+		public static final int bx_yanzhengma = Util.getResIdFromFileName(context, TYPE_ID, "bx_yanzhengma");
+		public static final int bx_home_select_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_select_account");
+		public static final int ll_text = Util.getResIdFromFileName(context, TYPE_ID, "ll_text");
+		public static final int bx_home_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_home_account");
+		public static final int bx_bangding_msg = Util.getResIdFromFileName(context, TYPE_ID, "bx_bangding_msg");
+		public static final int bx_my_account = Util.getResIdFromFileName(context, TYPE_ID, "bx_my_account");
+		public static final int bx_edit = Util.getResIdFromFileName(context, TYPE_ID, "bx_edit");
+		public static final int bx_find_psw_next = Util.getResIdFromFileName(context, TYPE_ID, "bx_find_psw_next");
+		public static final int bx_find_password_tip = Util.getResIdFromFileName(context, TYPE_ID, "bx_find_password_tip");
+		public static final int bx_pay_grid = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_grid");
+		public static final int bx_pay_step_1 = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_step_1");
+		public static final int bx_pay_step_2 = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_step_2");
+		public static final int bx_pay_step_3 = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_step_3");
+		public static final int bx_pay_about = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_about");
+		public static final int bx_pay_account_name = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_account_name");
+		public static final int bx_pay_money = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_money");
+		public static final int pay_money_10 = Util.getResIdFromFileName(context, TYPE_ID, "pay_money_10");
+		public static final int pay_money_30 = Util.getResIdFromFileName(context, TYPE_ID, "pay_money_30");
+		public static final int pay_money_50 = Util.getResIdFromFileName(context, TYPE_ID, "pay_money_50");
+		public static final int pay_money_100 = Util.getResIdFromFileName(context, TYPE_ID, "pay_money_100");
+		public static final int pay_money_200 = Util.getResIdFromFileName(context, TYPE_ID, "pay_money_200");
+		public static final int pay_money_500 = Util.getResIdFromFileName(context, TYPE_ID, "pay_money_500");
+		public static final int pay_money_1000 = Util.getResIdFromFileName(context, TYPE_ID, "pay_money_1000");
+		public static final int bx_pay_moeny_other = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_moeny_other");
+		public static final int pay_submit = Util.getResIdFromFileName(context, TYPE_ID, "pay_submit");
+		public static final int bx_pay_card_no = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_no");
+		public static final int bx_pay_card_pwd = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_card_pwd");
+		public static final int bx_pay_item_icon = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_item_icon");
+		public static final int bx_pay_item_name = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_item_name");
+		public static final int bx_webview = Util.getResIdFromFileName(context, TYPE_ID, "bx_webview");
+		public static final int bx_title_tv = Util.getResIdFromFileName(context, TYPE_ID, "bx_title_tv");
+		public static final int bx_btn_web_back = Util.getResIdFromFileName(context, TYPE_ID, "bx_btn_web_back");
+		public static final int bx_btn_web_go = Util.getResIdFromFileName(context, TYPE_ID, "bx_btn_web_go");
+		public static final int bx_btn_web_refresh = Util.getResIdFromFileName(context, TYPE_ID, "bx_btn_web_refresh");
+		public static final int bx_pay_load_icon = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_load_icon");
+		public static final int bx_pay_load_text = Util.getResIdFromFileName(context, TYPE_ID, "bx_pay_load_text");
+		public static final int bx_tip_submit = Util.getResIdFromFileName(context, TYPE_ID, "bx_tip_submit");
+		public static final int bx_tip_content = Util.getResIdFromFileName(context, TYPE_ID, "bx_tip_content");
+		public static final int bx_download_submit = Util.getResIdFromFileName(context, TYPE_ID, "bx_download_submit");
+		public static final int bx_download_cancle = Util.getResIdFromFileName(context, TYPE_ID, "bx_download_cancle");
+		public static final int bx_pull_to_load_progress = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_to_load_progress");
+		public static final int bx_pull_to_load_image = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_to_load_image");
+		public static final int bx_pull_to_load_text = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_to_load_text");
+		public static final int bx_pull_to_refresh_updated_at = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_to_refresh_updated_at");
+		public static final int bx_pull_to_refresh_image = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_to_refresh_image");
+		public static final int bx_pull_to_refresh_text = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_to_refresh_text");
+		public static final int bx_pull_to_refresh_progress = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_to_refresh_progress");
+		public static final int bx_pull_refresh_view = Util.getResIdFromFileName(context, TYPE_ID, "bx_pull_refresh_view");
+		public static final int bx_bind_phone_way_now = Util.getResIdFromFileName(context, TYPE_ID, "bx_bind_phone_way_now");
+		public static final int bx_bind_phone_later = Util.getResIdFromFileName(context, TYPE_ID, "bx_bind_phone_later");
+		public static final int bx_account_info_name = Util.getResIdFromFileName(context, TYPE_ID, "bx_account_info_name");
+		public static final int bx_account_switch_info_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_account_switch_info_btn");
+		public static final int bx_account_info_bind_phone = Util.getResIdFromFileName(context, TYPE_ID, "bx_account_info_bind_phone");
+		public static final int bx_account_info_change_password = Util.getResIdFromFileName(context, TYPE_ID, "bx_account_info_change_password");
+		public static final int bx_account_info_show_game = Util.getResIdFromFileName(context, TYPE_ID, "bx_account_info_show_game");
+		public static final int bx_reset_password_verifycode = Util.getResIdFromFileName(context, TYPE_ID, "bx_reset_password_verifycode");
+		public static final int bx_reset_password_input = Util.getResIdFromFileName(context, TYPE_ID, "bx_reset_password_input");
+		public static final int bx_reset_password_get_veryficode = Util.getResIdFromFileName(context, TYPE_ID, "bx_reset_password_get_veryficode");
+		public static final int bx_reset_password_btn = Util.getResIdFromFileName(context, TYPE_ID, "bx_reset_password_btn");
+		
+		
+		public static final int mainView = Util.getResIdFromFileName(context, TYPE_ID, "mainView");
+		public static final int webView = Util.getResIdFromFileName(context, TYPE_ID, "webView");
+		public static final int btn_refresh = Util.getResIdFromFileName(context, TYPE_ID, "btn_refresh");
+		public static final int left_button = Util.getResIdFromFileName(context, TYPE_ID, "left_button");
+		public static final int right_button = Util.getResIdFromFileName(context, TYPE_ID, "right_button");
+		public static final int dialog_split_v = Util.getResIdFromFileName(context, TYPE_ID, "dialog_split_v");
+		public static final int dialog_title = Util.getResIdFromFileName(context, TYPE_ID, "dialog_title");
+		public static final int dialog_message = Util.getResIdFromFileName(context, TYPE_ID, "dialog_message");
+		public static final int dialog_divider = Util.getResIdFromFileName(context, TYPE_ID, "dialog_divider");
+		public static final int dialog_content_view = Util.getResIdFromFileName(context, TYPE_ID, "dialog_content_view");
+		public static final int dialog_button_group = Util.getResIdFromFileName(context, TYPE_ID, "dialog_button_group");
+		public static final int bx_change_bind_phone_password = Util.getResIdFromFileName(context, TYPE_ID, "bx_change_bind_phone_password");
+		public static final int loading_text = Util.getResIdFromFileName(context, TYPE_ID, "loading_text");
+	}
+
+	public static final class anim{
+		public static final int push_up_in = Util.getResIdFromFileName(context, TYPE_ANIM, "push_up_in");
+		public static final int push_up_out = Util.getResIdFromFileName(context, TYPE_ANIM, "push_up_out");
+	}
+	
+	public static final int MARGIN_LAYOUT_20 = 20;
+	public static final int MARGIN_LAYOUT_10 = 10;
+	public static final int MARGIN_LAYOUT_5 = 5;
+	public static final int MARGIN_LAYOUT_0 = 0;
+}
