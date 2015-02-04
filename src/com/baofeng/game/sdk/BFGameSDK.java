@@ -51,7 +51,7 @@ public class BFGameSDK {
 			
 			if (appInfo.metaData!=null) {
 				channel = appInfo.metaData.getInt("CX_CHANNEL");
-				System.out.println("CX_CHANNEL=="+channel);
+//				System.out.println("CX_CHANNEL=="+channel);
 				if (channel!=0) {
 					BFGameConfig.CHANNEL_ID=channel;
 				}

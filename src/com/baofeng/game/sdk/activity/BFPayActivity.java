@@ -1020,27 +1020,33 @@ public class BFPayActivity extends BFBaseActivity {
 								result.getOrderId(), result.getNotifyUrl(),
 								new OnPayListener() {
 									public void payCallback(
-											final boolean success,
+											boolean success,
 											String statusCode) {
 										String content = "";
 										if (success) {
 											content = "支付成功";
+											BXDialogUtil.showDialog(context, "提示",
+													content, "确定", null,
+													new OnAlertSelectId() {
+														public void onClick(
+																int whichButton,
+																Object o) {
+																finish();
+														}
+													}).show();
 											payResult(OperateType.PAY,
 													BFSDKStatusCode.SUCCESS);
 										} else {
 											content = "支付失败";
+											BXDialogUtil.showDialog(context, "提示",
+													content, "确定", null,
+													new OnAlertSelectId() {
+												public void onClick(
+														int whichButton,
+														Object o) {
+												}
+											}).show();
 										}
-										BXDialogUtil.showDialog(context, "提示",
-												content, "确定", null,
-												new OnAlertSelectId() {
-													public void onClick(
-															int whichButton,
-															Object o) {
-														if (success) {
-															finish();
-														}
-													}
-												}).show();
 									}
 								});
 						aliMgr.init();

@@ -5,21 +5,36 @@ import java.util.Map;
 
 import org.json.JSONObject;
 
+import android.text.TextUtils;
 import android.util.Log;
 
 public class Result {
-	
+
 	private static final Map<String, String> sResultStatus;
 
-	private String mResult;
-	
-	String resultStatus = null;
-	String memo = null;
-	String result = null;
+
+	public String resultStatus;
+	private String memo;
+	private String result;
 	boolean isSignOk = false;
 
-	public Result(String result) {
-		this.mResult = result;
+	public Result(String rawResult) {
+		
+		if (TextUtils.isEmpty(rawResult))
+			return;
+		
+		String[] resultParams = rawResult.split(";");
+		for (String resultParam : resultParams) {
+			if (resultParam.startsWith("resultStatus")) {
+				resultStatus = gatValue(resultParam, "resultStatus");
+			}
+			if (resultParam.startsWith("result")) {
+				result = gatValue(resultParam, "result");
+			}
+			if (resultParam.startsWith("memo")) {
+				memo = gatValue(resultParam, "memo");
+			}
+		}
 	}
 
 	static {
@@ -37,34 +52,31 @@ public class Result {
 		sResultStatus.put("7001", "网页支付失败");
 	}
 
-	public  String getResult() {
-		String src = mResult.replace("{", "");
-		src = src.replace("}", "");
-		return getContent(src, "memo=", ";result");
-	}
-
-	public  void parseResult() {
-		
+	public void parseResult() {
 		try {
-			String src = mResult.replace("{", "");
-			src = src.replace("}", "");
-			String rs = getContent(src, "resultStatus=", ";memo");
-			if (sResultStatus.containsKey(rs)) {
-				resultStatus = sResultStatus.get(rs);
-			} else {
-				resultStatus = "其他错误";
-			}
-			resultStatus = rs;
+			System.out.println("===" + result);
 
-			memo = getContent(src, "memo=", ";result");
-			result = getContent(src, "result=", null);
 			isSignOk = checkSign(result);
+
+			System.out.println("===" + checkSign(result));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	private  boolean checkSign(String result) {
+	@Override
+	public String toString() {
+		return "resultStatus={" + resultStatus + "};memo={" + memo
+				+ "};result={" + result + "}";
+	}
+
+	private String gatValue(String content, String key) {
+		String prefix = key + "={";
+		return content.substring(content.indexOf(prefix) + prefix.length(),
+				content.lastIndexOf("}"));
+	}
+
+	private boolean checkSign(String result) {
 		boolean retVal = false;
 		try {
 			JSONObject json = string2JSON(result, "&");
@@ -89,7 +101,7 @@ public class Result {
 		return retVal;
 	}
 
-	public  JSONObject string2JSON(String src, String split) {
+	public JSONObject string2JSON(String src, String split) {
 		JSONObject json = new JSONObject();
 
 		try {
@@ -105,22 +117,24 @@ public class Result {
 		return json;
 	}
 
-	private  String getContent(String src, String startTag, String endTag) {
-		String content = src;
-		int start = src.indexOf(startTag);
-		start += startTag.length();
+	/**
+	 * @return the resultStatus
+	 */
+	public String getResultStatus() {
+		return resultStatus;
+	}
 
-		try {
-			if (endTag != null) {
-				int end = src.indexOf(endTag);
-				content = src.substring(start, end);
-			} else {
-				content = src.substring(start);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	/**
+	 * @return the memo
+	 */
+	public String getMemo() {
+		return memo;
+	}
 
-		return content;
+	/**
+	 * @return the result
+	 */
+	public String getResult() {
+		return result;
 	}
 }

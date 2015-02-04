@@ -179,11 +179,12 @@ public class AlixManager {
 			switch (msg.what) {
 			case RQF_PAY:
 				// 处理交易结果
-				try {
+				try { 
 					// 验签失败
 					if (!result.isSignOk) {
 						if(onPayListener != null)
 							onPayListener.payCallback(false, "0");
+						
 					} else {// 验签成功。验签成功后再判断交易状态码
 						if (result.resultStatus.equals("9000")) {
 							// 判断交易状态码，只有9000表示交易成功
